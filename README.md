@@ -12,8 +12,11 @@ and provide customized functionality. Dockerhub is a website that contains vario
 One of these is the jupyter/pysparknotebook.
 
 In this activity, we will :
-- Download and install the Docker engine on a personal computer (Docker 2.1.0.5), to run a small ML task.
-- Run a suitable pre-configured docker container on the machine, to provide a fully configured PySpark environment
+- Download and install the Docker engine on Ubuntu server (AWS EC2 instance).
+- Run a suitable pre-configured docker container on the server, to provide a functional PySpark environment in local mode on a single node
+- Import and Clean a Dataset
+- Ongoing
+- Ongoing
 
 
 # Install Docker and pre-configured Docker container with Python, PySpark, Jupyter  Notebook
