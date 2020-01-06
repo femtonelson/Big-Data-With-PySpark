@@ -53,7 +53,7 @@ Client:
  OS/Arch:           linux/amd64
  Experimental:      false
 ```
-- Pull the latest version of pre-configured Docker container, with Python 2.7.x and 3.x environments, pre-installed versions of pyspark, pandas, matplotlib, scipy, seaborn, and scikit-learn, 
+- Pull the latest version of pre-configured Docker container, with Python 3.x environment, pre-installed versions of pyspark, pandas, matplotlib, scipy, seaborn, and scikit-learn, 
   Apache Spark and Jupyter Notebook from Docker hub : https://hub.docker.com/r/jupyter/pyspark-notebook
 ```
 $sudo docker pull jupyter/pyspark-notebook:latest  
