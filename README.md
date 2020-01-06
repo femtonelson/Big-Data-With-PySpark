@@ -86,6 +86,6 @@ Ongoing
 Ongoing
 
 Useful links :
-https://hub.docker.com/r/jupyter/pyspark-notebook
-https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
+- https://hub.docker.com/r/jupyter/pyspark-notebook
+- https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 
