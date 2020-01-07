@@ -1,6 +1,6 @@
-# Setup PySpark with Docker on Ubuntu AWS EC2 instance and Build a Model on Madrid Airbnb Dataset
+# Setup PySpark with Docker on Ubuntu AWS EC2 instance and Build a Model on 
 
-- Data : https://www.kaggle.com/rusiano/madrid-airbnb-data/data
+- Data : 
 
 # Introduction
 Apache Spark™ is a open-source unified analytics engine for large-scale data processing. It achieves high performance for both batch and streaming data, 
@@ -82,16 +82,16 @@ $sudo docker stop pyspark
 ```
 
 # Importing the Dataset
-- Download the Madrid Airbnb dataset from : https://www.kaggle.com/rusiano/madrid-airbnb-data/data and upload the csv files to Jupyter Notebook working directory.
+- Download the Paris-Ile-De-France Airbnb dataset from : https://www.kaggle.com/rusiano/Paris-Ile-De-France-airbnb-data/data and upload the csv files to Jupyter Notebook working directory.
 <img src="./Uploading Files.jpg">
 
 
 # Create a Jupyter Notebook "Madrd-Airbnb" and Explore the Data
 
-- See Madrid-Airbnb.ipynb
+- See Paris-Ile-De-France-Airbnb.ipynb
 
 Useful links :
-- https://www.kaggle.com/rusiano/madrid-airbnb-data/data
+- https://www.kaggle.com/rusiano/Paris-Ile-De-France-airbnb-data/data
 - https://hub.docker.com/r/jupyter/pyspark-notebook
 - https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 
