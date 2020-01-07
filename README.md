@@ -88,7 +88,7 @@ $sudo docker stop pyspark
 
 # Create a Jupyter Notebook "Madrd-Airbnb" and Explore the Data
 
-<img src=".Madrid-Airbnb.ipynb">
+< src="./Madrid-Airbnb.ipynb">
 
 Useful links :
 - https://www.kaggle.com/rusiano/madrid-airbnb-data/data
