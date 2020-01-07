@@ -1,4 +1,6 @@
-# Setup PySpark with Docker on Ubuntu AWS EC2 instance and Run ML Predictions
+# Setup PySpark with Docker on Ubuntu AWS EC2 instance and Build a Model on Madrid Airbnb Dataset
+
+- Data : https://www.kaggle.com/rusiano/madrid-airbnb-data/data
 
 # Introduction
 Apache Spark™ is a open-source unified analytics engine for large-scale data processing. It achieves high performance for both batch and streaming data, 
@@ -25,6 +27,7 @@ In this activity, we will :
 ```
 $sudo apt-get update
 $sudo apt-get install
+$sudo apt-get upgrade
 $lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
@@ -34,9 +37,9 @@ Codename:       bionic
 ```
 - Download and install the suitable Docker Engine Community version package for the OS  : https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
-$sudo apt-get remove docker docker-engine docker.io containerd runc
 $sudo wget https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.03.1~ce~3-0~ubuntu_amd64.deb
-sudo dpkg -i docker-ce_18.06.0~ce~3-0~ubuntu_amd64.deb
+$sudo apt install libltdl-dev
+$sudo dpkg -i docker-ce_18.03.1~ce~3-0~ubuntu_amd64.deb
 ```
 - Check the installation status, Successful ! Check Docker version.
 ```
@@ -61,7 +64,7 @@ $sudo docker pull jupyter/pyspark-notebook:latest
 
 - Run the Docker container with name "pyspark" and make it's port 8888 accessible for Jupyter Notebook, add "&" to keep the Notebook server running permanently in background
 ```
-$sudo docker run -p 8888:8888 --name pyspark jupyter/pyspark-notebook --allow-root & 
+$sudo docker run -p 8888:8888 --name pyspark jupyter/pyspark-notebook & 
 ubuntu@ip-10-0-4-7:~$ Executing the command: jupyter notebook
 [I 20:57:08.610 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
 [I 20:57:10.057 NotebookApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
@@ -79,13 +82,17 @@ $sudo docker start pyspark
 $sudo docker stop pyspark 
 ```
 
-# PySpark Basics
-Ongoing
-
 # Importing the Dataset
-Ongoing
+- Download the Madrid Airbnb dataset from : https://www.kaggle.com/rusiano/madrid-airbnb-data/data and upload the csv files to Jupyter Notebook working directory.
+<img src="./Uploading Files.jpg">
+
+
+# Create a Jupyter Notebook "Madrd-Airbnb" and Explore the Data
+
+<img src="./Uploading Files.jpg">
 
 Useful links :
+- https://www.kaggle.com/rusiano/madrid-airbnb-data/data
 - https://hub.docker.com/r/jupyter/pyspark-notebook
 - https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 
