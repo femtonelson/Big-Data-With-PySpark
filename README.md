@@ -16,9 +16,8 @@ One of these is the jupyter/pysparknotebook.
 In this activity, we will :
 - Download and install the Docker engine on Ubuntu server (AWS EC2 instance).
 - Run a suitable pre-configured docker container on the server, to provide a functional PySpark environment in local mode on a single node
-- Import and Clean a Dataset
-- Ongoing
-- Ongoing
+- Import and Explore the Dataset with PySpark
+- Build, Test and Validate a model
 
 
 # Install Docker and pre-configured Docker container with Python, PySpark, Jupyter  Notebook
@@ -89,7 +88,7 @@ $sudo docker stop pyspark
 
 # Create a Jupyter Notebook "Madrd-Airbnb" and Explore the Data
 
-<img src="./Uploading Files.jpg">
+<img src=".Madrid-Airbnb.ipynb">
 
 Useful links :
 - https://www.kaggle.com/rusiano/madrid-airbnb-data/data
