@@ -82,16 +82,15 @@ $sudo docker stop pyspark
 ```
 
 # Importing the Dataset
-- Download the Paris-Ile-De-France Airbnb dataset from : https://www.kaggle.com/rusiano/Paris-Ile-De-France-airbnb-data/data and upload the csv files to Jupyter Notebook working directory.
+- Download the  dataset from :  and upload the csv files to Jupyter Notebook working directory.
 <img src="./Uploading Files.jpg">
 
 
-# Create a Jupyter Notebook "Madrd-Airbnb" and Explore the Data
+# Create a Jupyter Notebook "" and Explore the Data
 
-- See Paris-Ile-De-France-Airbnb.ipynb
+- See .ipynb
 
 Useful links :
-- https://www.kaggle.com/rusiano/Paris-Ile-De-France-airbnb-data/data
 - https://hub.docker.com/r/jupyter/pyspark-notebook
 - https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 
