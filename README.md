@@ -25,8 +25,7 @@ In this activity, we will :
 - EC2 Instance running with Ubuntu 18.04, update packages and check Ubuntu version
 ```
 $sudo apt-get update
-$sudo apt-get install
-$sudo apt-get upgrade
+$sudo apt-get upgrade -y
 $lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
@@ -37,7 +36,7 @@ Codename:       bionic
 - Download and install the suitable Docker Engine Community version package for the OS  : https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
 $sudo wget https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.03.1~ce~3-0~ubuntu_amd64.deb
-$sudo apt install libltdl-dev
+$sudo apt install -y libltdl-dev
 $sudo dpkg -i docker-ce_18.03.1~ce~3-0~ubuntu_amd64.deb
 ```
 - Check the installation status, Successful ! Check Docker version.
