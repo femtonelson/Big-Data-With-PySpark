@@ -82,8 +82,6 @@ $sudo docker stop pyspark
 
 # Importing the Dataset
 - Download the  dataset from :  and upload the csv files to Jupyter Notebook working directory.
-<img src="./Uploading Files.jpg">
-
 
 # Create a Jupyter Notebook "" and Explore the Data
 
