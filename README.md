@@ -1,6 +1,5 @@
-# Setup PySpark with Docker on Ubuntu AWS EC2 instance and Build a Model on 
+# Setup PySpark with Docker on Ubuntu AWS EC2 instance
 
-- Data : 
 
 # Introduction
 Apache Spark™ is a open-source unified analytics engine for large-scale data processing. It achieves high performance for both batch and streaming data, 
@@ -16,8 +15,6 @@ One of these is the jupyter/pysparknotebook.
 In this activity, we will :
 - Download and install the Docker engine on Ubuntu server (AWS EC2 instance).
 - Run a suitable pre-configured docker container on the server, to provide a functional PySpark environment in local mode on a single node
-- Import and Explore the Dataset with PySpark
-- Build, Test and Validate a model
 
 
 # Install Docker and pre-configured Docker container with Python, PySpark, Jupyter  Notebook
@@ -63,14 +60,11 @@ $sudo docker pull jupyter/pyspark-notebook:latest
 - Run the Docker container with name "pyspark" and make it's port 8888 accessible for Jupyter Notebook, add "&" to keep the Notebook server running permanently in background
 ```
 $sudo docker run -p 8888:8888 --name pyspark jupyter/pyspark-notebook & 
-ubuntu@ip-10-0-4-7:~$ Executing the command: jupyter notebook
-[I 20:57:08.610 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
-[I 20:57:10.057 NotebookApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
-[I 20:57:10.057 NotebookApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
-[I 20:57:11.238 NotebookApp] Serving notebooks from local directory: /home/jovyan
-[I 20:57:11.239 NotebookApp] The Jupyter Notebook is running at:
-[I 20:57:11.239 NotebookApp] http://1b544d1b02b6:8888/?token=1a64449f0431befeb5c20e715e19d51bac02404f60843b84
-[I 20:57:11.239 NotebookApp]  or http://127.0.0.1:8888/?token=1a64449f0431befeb5c20e715e19d51bac02404f60843b84
+
+To access the notebook, open this file in a browser:
+copy and paste one of these URLs:
+	http://0ace2fcc811e:8888/?token=b90051e75f2f56d065da4e9c3258a858530ab41afa9609d7
+ or http://127.0.0.1:8888/?token=b90051e75f2f56d065da4e9c3258a858530ab41afa9609d7
 ```
 - Access Jupyter Notebook in a web browser with the Public IP address of the EC2 instance/Server : http://IP.ADDRESS.OF.EC2INSTANCE:8888/?token=ec9221e2e3793361cb56b7ed77b06c4d6a4e3596085ae150
 
@@ -79,13 +73,6 @@ ubuntu@ip-10-0-4-7:~$ Executing the command: jupyter notebook
 $sudo docker start pyspark 
 $sudo docker stop pyspark 
 ```
-
-# Importing the Dataset
-- Download the  dataset from :  and upload the csv files to Jupyter Notebook working directory.
-
-# Create a Jupyter Notebook "" and Explore the Data
-
-- See .ipynb
 
 Useful links :
 - https://hub.docker.com/r/jupyter/pyspark-notebook
